@@ -1,5 +1,5 @@
 import React from 'react';
-import './AnalogClockStyles.scss'
+import './analogClockStyles.scss'
 
 export const AnalogClock = () => {
     return (

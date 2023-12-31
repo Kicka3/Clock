@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-
+import './digitalCock.css'
 
 export const DigitalClock = () => {
 
@@ -18,7 +18,7 @@ export const DigitalClock = () => {
     }, []);
 
     //Получаем часы, минуты, секунды из текущего времени
-    let hours = time.getHours();
+    let hours = time.getHours()
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
 
@@ -33,8 +33,26 @@ export const DigitalClock = () => {
     const timeDisplay = `${hh}:${mm}:${ss}`
 
     return (
-        <div>
-            <h1>{timeDisplay}</h1>
+        <div className='wrapper'>
+
+            <section className='digital__clock'>
+
+                <div className='display__container'>
+                    <h1 className='clock__title'>Times:</h1>
+                    <div className='background__img'>
+                        <h2 className='display__clock'>
+                            {timeDisplay}
+                            {/*<span className='hours'>{hh}</span>*/}
+                            {/*<span className='doube'>:</span>*/}
+                            {/*<span className='minutes'>{mm}</span>*/}
+                            {/*<span className='doube'>:</span>*/}
+                            {/*<span className='seconds'>{ss}</span>*/}
+                        </h2>
+                    </div>
+                </div>
+
+            </section>
+
         </div>
     );
 }

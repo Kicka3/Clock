@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {DigitalClock} from "./Components/digitalClock/Clock";
-import {AnalogClock} from "./Components/analogClock/AnalogClock";
+import {DigitalClock} from "./Components/digitalClock/DigitalClock";
+
 
 function App() {
     return (
         <div className="App">
             <DigitalClock/>
-            <AnalogClock/>
+            {/*<AnalogClock/>*/}
         </div>
     );
 }
