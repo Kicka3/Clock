@@ -18,12 +18,19 @@ export const DigitalClock = () => {
     }, []);
 
     //Получаем часы, минуты, секунды из текущего времени
-    const hours = time.getHours();
-    const minutes = time.getMinutes();
-    const seconds = time.getSeconds();
+    let hours = time.getHours();
+    let minutes = time.getMinutes();
+    let seconds = time.getSeconds();
+
+
+    //Добавить 0, если число меньше 10.
+    const hh = hours < 10 ? '0' + hours : hours
+    const mm = minutes < 10 ? '0' + minutes : minutes
+    const ss = seconds < 10 ? '0' + seconds : seconds
+
 
     //Приводим данные в нужный формат (в строку)
-    const timeDisplay = `${hours}:${minutes}:${seconds}`
+    const timeDisplay = `${hh}:${mm}:${ss}`
 
     return (
         <div>
