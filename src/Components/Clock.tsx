@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 
 
-export const Clock = () => {
+export const DigitalClock = () => {
 
     //Сохраняем и получаем корректную дату м время в стейт
     const [time, setTime] = useState(new Date());
