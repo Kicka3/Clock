@@ -1,11 +1,28 @@
 import React from 'react';
-import './analogClockStyles.scss'
+import './analogClockStyles.css'
 
 export const AnalogClock = () => {
     return (
-        <div className='analogClockWrapper'>
-            <h1>Display for analog clock</h1>
-        </div>
+        <section className='analog__lock'>
+
+            <div className='display__container'>
+
+                {/*<div className='clock__body'>*/}
+                    <div className="hour">
+                        <div className="hr" id="hr"></div>
+                    </div>
+                    <div className="min">
+                        <div className="mn" id="mn"></div>
+                    </div>
+                    <div className="sec">
+                        <div className="sc" id="sc"></div>
+                    </div>
+                {/*</div>*/}
+
+            </div>
+
+
+        </section>
     );
 };
 

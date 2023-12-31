@@ -20,11 +20,14 @@
 }
 
 .display__container {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
     position: relative;
+    gap: 40px;
 }
 
 .background__img {
@@ -32,23 +35,20 @@
 }
 
 .clock__title {
-    font-size: 86px;
-    position: absolute;
-    top: -200px;
-    right: 400px;
+    font-size: 96px;
     background: linear-gradient(135deg, #1adacf 20%, #2b8cc0 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .display__clock {
-    font-size: 100px;
+    font-size: 138px;
     background: linear-gradient(135deg, #12BCB0 20%, #fa680e 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     padding: 0.3em 0.6em ;
-    border: 3px solid transparent;
+    border: 4px solid transparent;
     border-image: linear-gradient(135deg, #df1699 20%, #0e35fa 70%);
     border-image-slice: 1;
 }
