@@ -7,8 +7,8 @@ import {AnalogClock} from "./Components/analogClock/AnalogClock";
 function App() {
     return (
         <div className="App">
-            <DigitalClock/>
-            {/*<AnalogClock/>*/}
+            {/*<DigitalClock/>*/}
+            <AnalogClock/>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-.analog__lock{
+.analog__clock {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -8,15 +8,15 @@
     background: #091921;
 }
 
-.display__container{
-    width: 350px;
-    height: 350px;
+.display__container {
+    width: 550px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('/src/img/clock.png'),
     url('/src/img/js.png'),
-    radial-gradient(circle, rgb(37, 73, 90) 0%, rgb(25, 48, 60) 11%, rgba(9,25,33,1) 38%);
+    radial-gradient(circle, rgb(37, 73, 90) 0%, rgb(25, 48, 60) 11%, rgba(9, 25, 33, 1) 38%);
     background-size: cover;
     border-radius: 50%;
     box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35),
@@ -26,52 +26,55 @@
 }
 
 /*//Точка*/
-.clock:before{
+.clock:before {
     content: '';
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #ffffff;
+    background-color: #ff0000;
     border-radius: 50%;
     z-index: 999;
 }
 
-.clock .hour,
-.clock .min,
-.clock .sec{
+.hour,
+.min,
+.sec {
     position: absolute;
 }
 
-.clock .hour, .hr{
+.hour, .hr {
     width: 160px;
     height: 160px;
 }
-.clock .min, .mn{
+
+.min, .mn {
     width: 190px;
     height: 190px;
 }
-.clock .sec, .sc{
+
+.sec, .sc {
     width: 230px;
     height: 230px;
 }
 
-.hr, .mn, .sc{
+.hr, .mn, .sc {
     display: flex;
     justify-content: center;
     position: absolute;
     border-radius: 50%;
 }
 
-.hr:before{
+.hr:before {
     content: '';
     position: absolute;
     width: 8px;
-    height: 80px;
+    height: 90px;
     background-color: #ffc600;
     z-index: 10;
     border-radius: 6px 6px 0 0;
 }
-.mn:before{
+
+.mn:before {
     content: '';
     position: absolute;
     width: 4px;
@@ -80,7 +83,8 @@
     z-index: 11;
     border-radius: 6px 6px 0 0;
 }
-.sc:before{
+
+.sc:before {
     content: '';
     position: absolute;
     width: 2px;
