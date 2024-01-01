@@ -26,7 +26,6 @@ export const AnalogClock = () => {
         <section className='analog__clock'>
 
             <div className='display__container'>
-
                 <div className="hour">
                     <div className="hr" style={{transform: `rotateZ(${(hours) + (minutes / 12)}deg)`}}></div>
                 </div>
@@ -36,9 +35,7 @@ export const AnalogClock = () => {
                 <div className="sec">
                     <div className="sc" style={{transform: `rotateZ(${seconds}deg)`}}></div>
                 </div>
-
             </div>
-
 
         </section>
     );
