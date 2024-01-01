@@ -37,7 +37,7 @@ export const DigitalClock = () => {
 
             <section className='digital__clock'>
 
-                <div className='display__container'>
+                <div className='digital_display__container'>
                     <h1 className='clock__title'>time:</h1>
                     <div className='background__img'>
                         <h2 className='display__clock'>
