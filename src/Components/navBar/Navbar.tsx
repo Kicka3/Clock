@@ -8,7 +8,7 @@ export const Navbar = () => {
     const [menu__class, setMenuClass] = useState('menu hidden');
     const [isMenuCliked, setIsMenuCliked] = useState(false);
 
-    //Переключаю классы и calss menu
+    //Переключаю классы и class menu
     const updateMenu = () => {
         if (!isMenuCliked) {
             setBurgerClass('burger-bar clicked');
@@ -29,7 +29,13 @@ export const Navbar = () => {
                     <div className={burger__class}></div>
                 </div>
             </nav>
-            <div className={menu__class}></div>
+            <div className={menu__class}>
+                <div className='menu_links__wrapper'>
+                    <div className='menu_link__item'>digital clock</div>
+                    <div className='menu_link__item'>analog clock</div>
+                </div>
+
+            </div>
         </div>
     );
 };

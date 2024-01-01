@@ -12,7 +12,7 @@ function App() {
         <div className="App">
             <Navbar/>
             {/*<DigitalClock/>*/}
-            {/*<AnalogClock/>*/}
+            <AnalogClock/>
 
             {/*<div>*/}
             {/*    <RouterProvider router={router}/>*/}
