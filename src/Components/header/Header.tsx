@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './header.css'
-import {NavLink, NavLinkProps} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export const Header = () => {
 
