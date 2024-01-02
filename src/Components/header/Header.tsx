@@ -21,6 +21,12 @@ export const Header = () => {
         setIsMenuClicked(!isMenuClicked);
     }
 
+    const onBlurHandler = () => {
+        setIsMenuClicked(false);
+        setMenuClass('menu hidden');
+        setBurgerClass('burger-bar unclicked');
+    }
+
         //Класс link_item для активного окна
         const final_link_item_cLass = ({isActive}: {isActive: boolean}) => isActive ? 'super_active' : 'menu_link__item'
 
@@ -35,7 +41,7 @@ export const Header = () => {
                 <span className='header__title'>your clock</span>
             </nav>
             <div className={menu__class}>
-                <div className='menu_links__wrapper'>
+                <div className='menu_links__wrapper' onBlur={onBlurHandler}>
                     <NavLink to={'/'} className={final_link_item_cLass}>homepage</NavLink>
                     <NavLink  to={'/digital'} className={final_link_item_cLass}>digital clock</NavLink>
                     <NavLink  to={'/analog'} className={final_link_item_cLass}>analog clock</NavLink>
