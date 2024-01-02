@@ -20,11 +20,10 @@ export const Header = () => {
         }
         setIsMenuClicked(!isMenuClicked);
     }
-        // const asd = ({isActive}: Pick<NavLinkProps, 'className'>) => {
 
-        const asd = ({isActive}: {isActive: boolean}) => isActive ? 'menu_link__item super_active' : 'menu_link__item'
+        //Класс link_item для активного окна
+        const final_link_item_cLass = ({isActive}: {isActive: boolean}) => isActive ? 'super_active' : 'menu_link__item'
 
-    //добавить классы
     return (
         <div className={'header__wrapper'}>
             <nav className={'nav'}>
@@ -37,10 +36,9 @@ export const Header = () => {
             </nav>
             <div className={menu__class}>
                 <div className='menu_links__wrapper'>
-                    {/*<NavLink to={'/'} className='menu_link__item'>homepage</NavLink>*/}
-                    <NavLink to={'/'} className={asd}>homepage</NavLink>
-                    <NavLink  to={'/digital'} className='menu_link__item'>digital clock</NavLink>
-                    <NavLink  to={'/analog'} className='menu_link__item'>analog clock</NavLink>
+                    <NavLink to={'/'} className={final_link_item_cLass}>homepage</NavLink>
+                    <NavLink  to={'/digital'} className={final_link_item_cLass}>digital clock</NavLink>
+                    <NavLink  to={'/analog'} className={final_link_item_cLass}>analog clock</NavLink>
                 </div>
             </div>
         </div>

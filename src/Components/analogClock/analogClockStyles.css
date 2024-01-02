@@ -8,7 +8,8 @@
     background: #091921;
 }
 
-.display__container {
+.analog_display__container {
+    margin-top: 56px;
     width: 550px;
     height: 550px;
     display: flex;

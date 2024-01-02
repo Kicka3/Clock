@@ -4,6 +4,7 @@ import {DigitalClock} from "./Components/digitalClock/DigitalClock";
 import {AnalogClock} from "./Components/analogClock/AnalogClock";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Layout} from "./Components/layout/Layout";
+import {HomePage} from "./Components/homePage/HomePage";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
             {/*//OLD syntax*/}
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
-                    <Route index element={<div style={{color: 'red'}}>MAIN1</div>}/>
+                    <Route index element={<HomePage/>}/>
                     <Route path={'digital'} element={<DigitalClock/>}/>
                     <Route path={'analog'} element={<AnalogClock/>}/>
                     <Route path={'404'} element={<div>404: Page not found</div>}/>
