@@ -10,7 +10,7 @@ export const HomePage = () => {
                 <h1 className='homePage__title'>
                     Этот сайт не заточен под мобильные устройства, так что наслаждайтесь тем, что есть
                 </h1>
-                <h2 className='homePage__subTitle'>Для выбора часов воспользуйтесь меню</h2>
+                <h2 className='homePage__subTitle'>Воспользуйтесь меню</h2>
 
             </div>
 
