@@ -43,9 +43,10 @@ export const Header = () => {
 
     //ПОЧИНИТЬ БАГ!
     const onBlurHandler = () => {
-        setIsMenuClicked(!setIsMenuClicked);
-        setBurgerClass('burger-bar unclicked');
-        setMenuClass('menu hidden');
+        //maybe do-it...
+        // setIsMenuClicked(!setIsMenuClicked);
+        // setBurgerClass('burger-bar unclicked');
+        // setMenuClass('menu hidden');
     }
 
 
