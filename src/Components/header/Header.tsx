@@ -27,6 +27,7 @@ export const Header = () => {
         setBurgerClass('burger-bar unclicked');
     }
 
+
         //Класс link_item для активного окна
         const final_link_item_cLass = ({isActive}: {isActive: boolean}) => isActive ? 'super_active' : 'menu_link__item'
 
