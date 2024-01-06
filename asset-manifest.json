@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Clocks/static/css/main.7b03313b.css",
-    "main.js": "/Clocks/static/js/main.37e02c62.js",
-    "static/js/787.93cfc5bb.chunk.js": "/Clocks/static/js/787.93cfc5bb.chunk.js",
-    "static/media/homepage.jpeg": "/Clocks/static/media/homepage.3744135edea79f91f774.jpeg",
-    "static/media/digitClock.jpg": "/Clocks/static/media/digitClock.69a9f01ad68b33d410e7.jpg",
-    "index.html": "/Clocks/index.html",
-    "main.7b03313b.css.map": "/Clocks/static/css/main.7b03313b.css.map",
-    "main.37e02c62.js.map": "/Clocks/static/js/main.37e02c62.js.map",
-    "787.93cfc5bb.chunk.js.map": "/Clocks/static/js/787.93cfc5bb.chunk.js.map"
+    "main.css": "/myApps/static/css/main.7509522d.css",
+    "main.js": "/myApps/static/js/main.6882c66d.js",
+    "static/js/787.93cfc5bb.chunk.js": "/myApps/static/js/787.93cfc5bb.chunk.js",
+    "static/media/homepage.jpeg": "/myApps/static/media/homepage.3744135edea79f91f774.jpeg",
+    "static/media/digitClock.jpg": "/myApps/static/media/digitClock.69a9f01ad68b33d410e7.jpg",
+    "index.html": "/myApps/index.html",
+    "main.7509522d.css.map": "/myApps/static/css/main.7509522d.css.map",
+    "main.6882c66d.js.map": "/myApps/static/js/main.6882c66d.js.map",
+    "787.93cfc5bb.chunk.js.map": "/myApps/static/js/787.93cfc5bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b03313b.css",
-    "static/js/main.37e02c62.js"
+    "static/css/main.7509522d.css",
+    "static/js/main.6882c66d.js"
   ]
 }
