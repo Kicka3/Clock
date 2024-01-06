@@ -6,6 +6,9 @@ export const DigitalClock = () => {
     //Сохраняем и получаем корректную дату м время в стейт
     const [time, setTime] = useState(new Date());
 
+    //Добавляем 0 для красоты
+    const get2digitalString = (number: number) => number < 10 ? '0' + number : number;
+
     //Обновляем каждую секунду время
     useEffect(() => {
         const interval = setInterval(() => {
@@ -17,20 +20,13 @@ export const DigitalClock = () => {
 
     }, []);
 
-    //Получаем часы, минуты, секунды из текущего времени
-    let hours = time.getHours()
-    let minutes = time.getMinutes();
-    let seconds = time.getSeconds();
-
-
-    //Добавить 0, если число меньше 10.
-    const hh = hours < 10 ? '0' + hours : hours
-    const mm = minutes < 10 ? '0' + minutes : minutes
-    const ss = seconds < 10 ? '0' + seconds : seconds
-
 
     //Приводим данные в нужный формат (в строку)
-    const timeDisplay = `${hh}:${mm}:${ss}`
+    const timeDisplay = `${get2digitalString(time.getHours())}
+                        :
+                        ${get2digitalString(time.getMinutes())}
+                        :
+                        ${get2digitalString(time.getSeconds())}`
 
     return (
         <div className='wrapper'>
@@ -42,11 +38,6 @@ export const DigitalClock = () => {
                     <div className='background__img'>
                         <h2 className='display__clock'>
                             {timeDisplay}
-                            {/*<span className='hours'>{hh}</span>*/}
-                            {/*<span className='doube'>:</span>*/}
-                            {/*<span className='minutes'>{mm}</span>*/}
-                            {/*<span className='doube'>:</span>*/}
-                            {/*<span className='seconds'>{ss}</span>*/}
                         </h2>
                     </div>
                 </div>
