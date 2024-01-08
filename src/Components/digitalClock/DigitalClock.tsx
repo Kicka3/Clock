@@ -1,7 +1,7 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import './digitalCock.css'
 
-export const DigitalClock = () => {
+export const DigitalClock: React.FC = () => {
 
     //Сохраняем и получаем корректную дату м время в стейт
     const [time, setTime] = useState(new Date());
@@ -11,11 +11,12 @@ export const DigitalClock = () => {
 
     //Обновляем каждую секунду время
     useEffect(() => {
+
         const interval = setInterval(() => {
             setTime(new Date());
         }, 1000);
 
-        //Чистим interval после c. unmounts
+        //Чистим interval после c. will unmounts
         return () => clearInterval(interval);
 
     }, []);

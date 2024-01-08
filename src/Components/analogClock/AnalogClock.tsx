@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './analogClockStyles.css'
 
-export const AnalogClock = () => {
+export const AnalogClock: React.FC = () => {
 
     //Сохраняем и получаем корректную дату м время в стейт
     const [time, setTime] = useState(new Date());

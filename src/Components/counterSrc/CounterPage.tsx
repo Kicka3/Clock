@@ -11,7 +11,7 @@ export type counterValue = {
     value: number
 }
 
-export const CounterPage = () => {
+export const CounterPage: React.FC = () => {
     const counterValue = useSelector<RootReducerType, number>(state => state.counterReducer.counterValue);
     const max = useSelector<RootReducerType, number>(state => state.counterReducer.max);
     const start = useSelector<RootReducerType, number>(state => state.counterReducer.start);
