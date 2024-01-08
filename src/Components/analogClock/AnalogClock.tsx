@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './analogClockStyles.css'
+import {cleanup} from "@testing-library/react";
 
 export const AnalogClock: React.FC = () => {
 
@@ -10,9 +11,11 @@ export const AnalogClock: React.FC = () => {
 
     //Обновляем каждую секунду время
     useEffect(() => {
-        setInterval(() => {
+        const intervalID = setInterval(() => {
             setTime(new Date());
         }, 1000);
+
+        return () => clearInterval(intervalID);
 
     }, []);
 
