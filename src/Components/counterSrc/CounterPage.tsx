@@ -39,29 +39,10 @@ export const CounterPage: React.FC = () => {
     }
 
     const setSettings = () => {
-        // localStorage.setItem('maxValue', `${max}`);                    //Закидываю в storage по нажатию на SET
-        // localStorage.setItem('startValue', `${start}`);                //Закидываю в storage по нажатию на SET
-
         dispatch(setCurrentValueAC(start));
         dispatch(setStatusAC(false));
         console.log(`setSettings - тут закидываю число: ${start} в сторэдж`);
     }
-
-    //Тут будет логика для сохранения числа в инпут
-    // useEffect(() => {                                                   //Достаю число из storage для инпут при перезагрузке
-    //     let maxFromStorage = localStorage.getItem('maxValue')
-    //     if (maxFromStorage) {
-    //         let maxValueFromStorage = JSON.parse(maxFromStorage)
-    //         setMax(maxValueFromStorage)
-    //         console.log(`Достал max число из Storage ` + maxValueFromStorage)
-    //     }
-    //     let startFromStorage = localStorage.getItem('startValue')
-    //     if (startFromStorage) {
-    //         let startValueFromStorage = JSON.parse(startFromStorage)
-    //         setStart(startValueFromStorage)
-    //         console.log(`Достал start число из Storage ` + startValueFromStorage)
-    //     }
-    // }, []);
 
     return (
         <div className="counter-wrapper">
